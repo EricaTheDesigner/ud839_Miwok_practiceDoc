@@ -56,20 +56,30 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(7, "eight");
         words.add(8, "nine");
         words.add(9, "ten");
+//        //While statement
+//        int i =0;
+//        while (i < words.size()) {
+//            LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
+//            TextView wordView = new TextView(this);
+//            wordView.setText(words.get(i));
+//            rootView.addView(wordView);
+//            i++;
+//        }
+
+        //For statement
+        for (int i = 0; i < words.size(); i++){
+            LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
+            TextView wordView = new TextView(this);
+            wordView.setText(words.get(i));
+            rootView.addView(wordView);
+        }
+
 //        //print message to test values
 //        Log.v("NumbersActivity", "Word at index 3: " + words.get(3));
-        LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
-        TextView wordView = new TextView(this);
-        wordView.setText(words.get(0));
-        rootView.addView(wordView);
 
-        TextView wordView2 = new TextView(this);
-        wordView2.setText(words.get(1));
-        rootView.addView(wordView2);
-
-        TextView wordView3 = new TextView(this);
-        wordView3.setText(words.get(2));
-        rootView.addView(wordView3);
+//        TextView wordView2 = new TextView(this);
+//        wordView2.setText(words.get(1));
+//        rootView.addView(wordView2);
 
     }
 }
