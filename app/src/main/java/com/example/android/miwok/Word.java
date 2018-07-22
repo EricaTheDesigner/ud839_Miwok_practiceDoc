@@ -16,6 +16,7 @@ public class Word {
      * @param miwokTranslation is the word in the Miwok language
      *
      */
+    //constructor name has to match Class "Word"
     public Word(String defaultTranslation, String miwokTranslation){
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
