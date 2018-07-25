@@ -36,3 +36,23 @@ public class WordAdapter extends ArrayAdapter<Word> {
         return listItemView;
     }
 }
+
+////Looping over 2D Arrays
+//public static double englishAverage (int [][] grades, int student) {
+//    int subjects = grades.length;
+//    int total = 0;
+//    for (int i = 0; i < subjects; i++) {
+//        total += grades[i][student];
+//    }
+//    double average = total / (double)subjects;
+//    return average;
+//    }
+//}
+//
+////Nested Loops
+//
+//for(int i=0; i<3; i++){
+//    for(int j=0; j<3; j++){
+//        System.out.println("Hi!");
+//        }
+//        }
